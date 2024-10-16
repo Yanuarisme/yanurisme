@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Santri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate-title">ABSENSI SANTRI</h1>
+
+        <!-- Form input nama mahasiswa -->
+        <div class="form-input animate-form">
+            <h3>Masukkan Nama Santri</h3>
+            <input type="text" id="studentName" placeholder="Nama Santri..." required>
+            <button id="addStudentBtn" class="animate-btn">Tambah Santri</button>
+        </div>
+
+        <!-- Tabel absensi -->
+        <table id="attendanceTable" class="animate-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Santri</th>
+                    <th> Hadir (H)</th>
+                    <th>Alpa (A)</th>
+                    <th>Sakit (S)</th>
+                    <th>Izin (I)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <!-- Tabel dinamis, mahasiswa akan ditambahkan di sini -->
+            </tbody>
+        </table>
+
+        <button id="generatePdfBtn" class="animate-btn">Cetak PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
